@@ -58,11 +58,12 @@ public class MultiSearchSelector {
                 ));
 
         purchaseOrderService.findAll().stream()
-                .filter(p -> p.getSupplier().toLowerCase().contains(q))
+                .filter(p -> p.getSupplier().toLowerCase().contains(q)
+                        || p.getMaterialName().toLowerCase().contains(q))
                 .forEach(p -> results.add(
                         new MultiSearchResultDTO(
                                 String.valueOf(p.getPurchaseOrderID()),
-                                p.getSupplier(),
+                                p.getSupplier() + " - " + p.getMaterialName(),
                                 Category.PURCHASE_ORDER
                         )
                 ));
