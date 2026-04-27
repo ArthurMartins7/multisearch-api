@@ -123,6 +123,29 @@ Exemplo completo local:
 
 `http://localhost:8080/multisearch/filter?query=abc`
 
+## 🧪 Testes da API
+
+Para facilitar os testes, existe uma coleção do Postman disponível em:
+
+`./docs/postman/multisearch.postman_collection.json`
+
+### 📥 Como importar e usar
+
+1. Abra o Postman.
+2. Clique em **Import**.
+3. Selecione o arquivo `./docs/postman/multisearch.postman_collection.json`.
+4. Após importar, configure a variável de coleção `{{baseUrl}}`.
+
+### 🔄 Alternando entre ambientes
+
+- **Ambiente Local (desenvolvimento)**  
+  Defina `{{baseUrl}}` como `http://localhost:8080/multisearch`.
+
+- **Ambiente de Produção (Railway)**  
+  Defina `{{baseUrl}}` como `https://multisearch-api-production.up.railway.app/multisearch` (ou a URL real do seu ambiente no Railway).
+
+Ao alterar a variável `{{baseUrl}}` no nível da coleção, todos os endpoints serão atualizados automaticamente.
+
 ## Execução com profile específico
 
 Se quiser forçar profile manualmente local:

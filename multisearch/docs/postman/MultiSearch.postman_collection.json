@@ -1,0 +1,179 @@
+{
+  "info": {
+    "_postman_id": "9733ce7c-30a3-41e1-95ec-ccd4890a2bf2",
+    "name": "MultiSearch",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28761699",
+    "_collection_link": "https://go.postman.co/collection/28761699-9733ce7c-30a3-41e1-95ec-ccd4890a2bf2?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Equipment",
+      "item": [
+        {
+          "name": "[EQUIPMENT] findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/equipment",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "equipment"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Sales Order",
+      "item": [
+        {
+          "name": "[SALES ORDER] findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/salesorder",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "salesorder"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Purchase Order",
+      "item": [
+        {
+          "name": "[PURCHASE ORDER] findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/purchaseorder",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "purchaseorder"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Material",
+      "item": [
+        {
+          "name": "[MATERIAL] findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/material",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "material"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Workforce",
+      "item": [
+        {
+          "name": "[WORKFORCE] findAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/workforce",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "workforce"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Multi Search",
+      "item": [
+        {
+          "name": "[MULTI SEARCH] Filter",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/filter?query=mesa ret",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "filter"
+              ],
+              "query": [
+                {
+                  "key": "query",
+                  "value": "mesa ret"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": ""
+    }
+  ]
+}
