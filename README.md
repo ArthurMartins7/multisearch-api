@@ -2,6 +2,17 @@
 
 API REST desenvolvida com Spring Boot para consulta de dados de múltiplas fontes do domínio (materiais, equipamentos, ordens de compra, ordens de venda e mão de obra), incluindo uma rota de busca consolidada.
 
+## Entregáveis do desafio
+
+Este backend foi desenvolvido como um projeto separado do frontend.
+
+- **Repositório atual (backend)**: API Spring Boot (`MultiSearch API`).
+- **Frontend**: projeto React separado (com deploy na Vercel).
+- **Frontend publicado**: `https://multisearch-web.vercel.app`
+- **Backend publicado**: `https://multisearch-api-production.up.railway.app/multisearch`
+
+> Observação: a pasta `multisearch/multisearch` existe porque a pasta externa é da entrega e a interna é o projeto Spring Boot.
+
 ## Visão geral do projeto
 
 O backend está na pasta `multisearch/` e segue uma estrutura simples em camadas:
@@ -127,13 +138,13 @@ Exemplo completo local:
 
 Para facilitar os testes, existe uma coleção do Postman disponível em:
 
-`./docs/postman/multisearch.postman_collection.json`
+`./multisearch/docs/postman/MultiSearch.postman_collection.json`
 
 ### 📥 Como importar e usar
 
 1. Abra o Postman.
 2. Clique em **Import**.
-3. Selecione o arquivo `./docs/postman/multisearch.postman_collection.json`.
+3. Selecione o arquivo `./multisearch/docs/postman/MultiSearch.postman_collection.json`.
 4. Após importar, configure a variável de coleção `{{baseUrl}}`.
 
 ### 🔄 Alternando entre ambientes
